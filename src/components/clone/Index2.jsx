@@ -45,12 +45,73 @@ function Index2() {
 
         <div class="mainmenu-area">
           <Header />
-          <coingecko-coin-price-marquee-widget
-            coin-ids="bitcoin,ethereum,eos,ripple,litecoin"
-            currency="usd"
-            background-color="#ffffff"
-            locale="en"
-          ></coingecko-coin-price-marquee-widget>
+          <div
+            style={{
+              height: "62px",
+              backgroundColor: "#FFFFFF",
+              overflow: "hidden",
+              boxSizing: "border-box",
+              border: "1px solid #56667F",
+              borderRadius: "4px",
+              textAlign: "right",
+              lineHeight: "14px",
+              blockSize: "62px",
+              fontSize: "12px",
+              fontFeatureSettings: "normal",
+              textSizeAdjust: "100%",
+              boxShadow: "inset 0 -20px 0 0 #56667F",
+              padding: "1px",
+              margin: "0px",
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                height: "40px",
+                padding: "0px",
+                margin: "0px",
+                width: "100%",
+              }}
+            >
+              <iframe
+                src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover="
+                title="coinlib widget"
+                width="100%"
+                height="36px"
+                scrolling="auto"
+                marginWidth="0"
+                marginHeight="0"
+                frameBorder="0"
+                border="0"
+                style={{ border: 0, margin: 0, padding: 0 }}
+              ></iframe>
+            </div>
+            <div
+              style={{
+                color: "#FFFFFF",
+                lineHeight: "14px",
+                fontWeight: 400,
+                fontSize: "11px",
+                boxSizing: "border-box",
+                padding: "2px 6px",
+                width: "100%",
+                fontFamily: " Verdana, Tahoma, Arial, sans-serif",
+              }}
+            >
+              <a
+                href="https://coinlib.io"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  fontWeight: 500,
+                  color: "#FFFFFF",
+                  textDecoration: "none",
+                  fontSize: "11px",
+                }}
+                title="iwje"
+              ></a>
+            </div>
+          </div>
         </div>
         <section class="hero-banner" id="heroSlideActive">
           <div class="single-banner-wrap">
@@ -63,12 +124,12 @@ function Index2() {
                     <div class="banner-text fs-16 lh-28">
                       <h1
                         class="fs-45 lh-60 m-b-45"
-                        data-animation="fadeInUp"
-                        data-delay=".4s"
+                        data-aos="fade-up-left"
+                        data-aos-duration="1000"
                       >
-                        MAKING YOUR DREAMS COME TRUE WITH croxvest
+                        MAKING YOUR DREAMS COME TRUE WITH CROXVEST
                       </h1>
-                      <p data-animation="fadeInUp" data-delay=".6s">
+                      <p data-aos="fade-up-left" data-aos-duration="1000">
                         croxvest is an investment company, which was founded by
                         commercial traders with ten years experience of
                         successful activity in the Forex market, as well as
@@ -78,16 +139,14 @@ function Index2() {
                         <a
                           href="/login"
                           class="boxed-btn m-r-30"
-                          data-animation="fadeInUp"
-                          data-delay=".8s"
+                          data-aos="fade-up-left" data-aos-duration="1000"
                         >
                           ACCOUNT
                         </a>
                         <a
                           href="/signup"
                           class="boxed-btn boxed-btn-white"
-                          data-animation="fadeInUp"
-                          data-delay=".8s"
+                          data-aos="fade-up-left" data-aos-duration="1000"
                         >
                           GET STARTED
                         </a>
@@ -102,7 +161,7 @@ function Index2() {
             </div>
           </div>
         </section>
-        <section class="about-section position-relative p-b-120" id="about">
+        <section class="about-section position-relative p-b-120" id="about" data-aos="zoom-in" data-aos-duration="1000">
           <div class="container">
             <div class="feature-section">
               <h2 class="shadow-title">
@@ -129,8 +188,6 @@ function Index2() {
                       <p style={{ color: "#c3bcbc" }}>
                         You can make a withdrawal whenever your balance allows
                         it.
-                       {/* self::$connect = new mysqli('localhost','biaiglhg_croxvest','n=yta8jT,}JC','biaiglhg_croxvest'); */}
-
                       </p>
                       <a href="/signup" class="readmore">
                         Read More
@@ -218,8 +275,8 @@ function Index2() {
             </div>
             <div class="about-content p-t-120 bg-light rounded">
               <div class="section-title m-b-60 text-center">
-                <h3>About US</h3>
-                <p>
+                <h3 data-aos="fade-in-left" data-aos-duration="1000">About US</h3>
+                <p data-aos="fade-up-left" data-aos-duration="1000">
                   We have been delivering superior service, and access to
                   education and resources to help you reach your goals with
                   confidence. More than a decade later, croxvest group continue
@@ -232,10 +289,10 @@ function Index2() {
               <div class="row align-items-center ">
                 <div class="col-lg-6 col-md-6 col-12 ">
                   <div class="about-text">
-                    <h3 class="fs-30 lh-45 m-b-30">
+                    <h3 class="fs-30 lh-45 m-b-30" data-aos="fade-in-left" data-aos-duration="1000">
                       Our Success <span class="theme-color">Story</span>
                     </h3>
-                    <p class="m-b-20" align="justify">
+                    <p class="m-b-20" align="justify" data-aos="fade-up-left" data-aos-duration="1000">
                       croxvest was established in mid 2020 by traders for
                       traders. We have a goal which was to create a retail
                       trading broker which allowed our clients to enjoy
@@ -249,7 +306,7 @@ function Index2() {
                       of the strongest retail brokers on the market
                     </p>
 
-                    <p class="m-b-20" align="justify">
+                    <p class="m-b-20" align="justify" data-aos="fade-up-left" data-aos-duration="1000">
                       As a highly regulated investment firm, you can be
                       confident that croxvest meets the strict standards of
                       financial stability and correct behavior funds. Your
@@ -291,7 +348,7 @@ function Index2() {
           </div>
         </section>
 
-        <section class="core-feature p-tb-120">
+        <section class="core-feature p-tb-120" data-aos="zoom-up-left" data-aos-duration="1000">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-6 col-12">
@@ -414,7 +471,7 @@ function Index2() {
           </div>
         </section>
 
-        <section class="counterup-section position-relative bg-img-c p-tb-90">
+        <section class="counterup-section position-relative bg-img-c p-tb-90" data-aos="fade-left" data-aos-duration="1000"> 
           <div class="container">
             <h3 class="fs-30 m-b-45">Our Work History</h3>
             <div class="row">
@@ -516,8 +573,8 @@ function Index2() {
                       </a>{" "}
                     </div>
                   </div>
-                  </div>
-                  <div className="col-md-3 col-12">
+                </div>
+                <div className="col-md-3 col-12">
                   <div className="single-brand-logo">
                     <div className="brand-logo">
                       <a href="/">
@@ -525,8 +582,8 @@ function Index2() {
                       </a>{" "}
                     </div>
                   </div>
-                  </div>
-                  <div className="col-md-3 col-12">
+                </div>
+                <div className="col-md-3 col-12">
                   <div className="single-brand-logo">
                     <div className="brand-logo">
                       <a href="/">
@@ -534,8 +591,8 @@ function Index2() {
                       </a>{" "}
                     </div>
                   </div>
-                  </div>
-                  <div className="col-md-3 col-12">
+                </div>
+                <div className="col-md-3 col-12">
                   <div className="single-brand-logo">
                     <div className="brand-logo">
                       <a href="/">
@@ -543,8 +600,8 @@ function Index2() {
                       </a>{" "}
                     </div>
                   </div>
-                  </div>
-                  <div className="col-md-3 col-12">
+                </div>
+                <div className="col-md-3 col-12">
                   <div className="single-brand-logo">
                     <div className="brand-logo">
                       <a href="/">
@@ -552,8 +609,8 @@ function Index2() {
                       </a>{" "}
                     </div>
                   </div>
-                  </div>
-                  <div className="col-md-3 col-12">
+                </div>
+                <div className="col-md-3 col-12">
                   <div className="single-brand-logo">
                     <div className="brand-logo">
                       <a href="/">
@@ -561,7 +618,7 @@ function Index2() {
                       </a>{" "}
                     </div>
                   </div>
-                  </div>
+                </div>
               </div>
 
               <p style={{ textAlign: "center" }}>

@@ -13,7 +13,7 @@ function Footer() {
           <div class="col-lg-3 col-md-6 col-12">
             <div class="site-info m-b-65">
               <div class="footer-logo m-b-35">
-                <img src={logo} alt="" />
+                <img src={logo} id="logo" alt="" />
               </div>
               <p>
                 croxvest was founded by commercial traders with ten years
