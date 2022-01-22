@@ -242,9 +242,9 @@ function Signup() {
                 required
               >
                 <option>Select Your Currency</option>
-                <option value="usd">&#36; Usd</option>
-                <option value="euro ">&euro; Eur</option>
-                <option value="pound">&#163; Gbp</option>
+                <option value="usd">&#36; Eth</option>
+                <option value="euro ">&euro; Lte</option>
+                <option value="pound">&#163; Ud</option>
                 <option value="bitcoin ">&#8383; Bitcoin</option>
               </select>
               {isloading ? (
