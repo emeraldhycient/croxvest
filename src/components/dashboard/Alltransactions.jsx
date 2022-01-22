@@ -44,19 +44,19 @@ function Alltransactions() {
                 <div className="maincontent">
                     <Body>
                         <h4><i className="fa fa-compass text-primary"></i> {match.path}</h4>
+                        <div className="mt-5">
+                            <Transactions />
+                        </div>
                         <div className="container mt-4">
                             <div className="row">
-                                <div className="col-md-6 mb-5 shadow bg-white d-flex justify-content-center align-items-center table-responsive">
+                                <div className="col-md-6 mb-5 border bg-white d-flex justify-content-center align-items-center table-responsive">
                                     <LineCharts />
                                 </div>
                                 <div className="col-md-1"></div>
-                                <div className="col-md-5 mb-5  shadow bg-white d-flex justify-content-center align-items-center table-responsive">
+                                <div className="col-md-5 mb-5  border bg-white d-flex justify-content-center align-items-center table-responsive">
                                     <Piechart />
                                 </div>
                             </div>
-                        </div>
-                        <div className="mt-5">
-                            <Transactions />
                         </div>
                     </Body>
                 </div>

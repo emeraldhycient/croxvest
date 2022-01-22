@@ -45,7 +45,7 @@ function Members() {
 
   const handleDelete = (id) => {
     axios
-      .get(`https://api.bisquecrypto.com/api/admin/deleteuser.php?userid=${id}`)
+      .get(`https://api.croxvest.com/api/admin/deleteuser.php?userid=${id}`)
       .then((res) => {
         notify(res.data.message);
         setTimeout(() => {
@@ -59,7 +59,7 @@ function Members() {
 
   useEffect(() => {
     axios
-      .get("https://api.bisquecrypto.com/api/admin/users.php")
+      .get("https://api.croxvest.com/api/admin/users.php")
       .then((res) => {
         let mod = Object.values(res.data.data.users);
         setusers(mod);
@@ -94,7 +94,7 @@ function Members() {
             {userid ? (
               <div className="container">
                 <div className="row">
-                  <div className="col-md-7 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2">
+                  <div className="col-md-7 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2">
                     <Edituser userid={userid} />
                   </div>
                 </div>
@@ -107,7 +107,7 @@ function Members() {
             )}
             <div className="container">
               <div className="row">
-                <div className="col-md-12 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2">
+                <div className="col-md-12 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2">
                   <h5 className="ml-2 text-dark">Members Details</h5>
                   <div
                     style={{

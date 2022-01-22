@@ -67,7 +67,7 @@ function Settings() {
 
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/auth/updatesettings.php",
+      url: "https://api.croxvest.com/api/auth/updatesettings.php",
       data: formdata,
     })
       .then((e) => {
@@ -89,7 +89,7 @@ function Settings() {
     formdata.append("userid", user);
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/user/userdetails.php",
+      url: "https://api.croxvest.com/api/user/userdetails.php",
       data: formdata,
     })
       .then((res) => {
@@ -130,7 +130,7 @@ function Settings() {
             </h4>
             <div className="container mt-5">
               <div className="row">
-                <div className="col-md-5 mt-auto ml-auto mr-auto mb-4 shadow bg-white p-3">
+                <div className="col-md-5 mt-auto ml-auto mr-auto mb-4 border bg-white p-3">
                   <div className="d-flex">
                     <div className="circle bg-danger mr-4">
                       <i className="fa fa-user fa-2x text-white"></i>
@@ -161,21 +161,12 @@ function Settings() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-5 mt-auto ml-auto mr-auto mb-4 shadow bg-white p-0">
-                  <h5 className="ml-2 text-dark">wallet</h5>
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "1px",
-                      backgroundColor: "#cacaca",
-                      marginBottom: "30px",
-                    }}
-                  ></div>
-                  <h6 className="text-primary mb-5 ml-2">
+                <div className="col-md-5 mt-auto ml-auto mr-auto mb-4 border bg-white p-0">
+                  <h6 className="text-primary mb-5 ml-2 mt-2">
                     Registered on : {userdetails.createdAt}
                   </h6>
 
-                  <div className="btn-group w-100 pl-2 pr-2">
+                  <div className="btn-group w-100 pl-2 pr-2 mb-3">
                     <button className="btn btn-primary col">
                       <a href="/dashboard/deposit" className="text-white">
                         Deposit
@@ -192,7 +183,7 @@ function Settings() {
             </div>
             <div className="container">
               <div className="row">
-                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2">
+                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2">
                   <h5 className="ml-2 text-dark">Update Details</h5>
                   <div
                     style={{

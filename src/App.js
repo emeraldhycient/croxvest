@@ -16,6 +16,7 @@ import Contact from "./components/pages/Contact"
 import Login from "./components/pages/Login";
 import Signup from "./components/pages/Signup";
 import Four0Four from "./components/Four0Four"
+import Index2 from './components/clone/Index2';
 /* user dashboard */
 import Home from "./components/dashboard/Home";
 import Deposit from "./components/dashboard/Deposit";
@@ -43,7 +44,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={Index} />
+      <Route path="/" exact component={Index2} />
+      <Route path="/index2" exact component={Index} />
         <Route path="/about" component={About} />
         <Route path="/faq" component={Faq} />
         <Route path="/contact" component={Contact} />

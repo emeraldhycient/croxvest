@@ -47,7 +47,7 @@ function Contact() {
 
     axios({
       method: "POST",
-      url: " https://api.bisquecrypto.com/api/user/message.php",
+      url: " https://api.croxvest.com/api/user/message.php",
       data: formdata,
     })
       .then((res) => {
@@ -80,12 +80,8 @@ function Contact() {
       />
       <Netbackground>
         <Header />
-        <br />
-        <br />
-        <br />
-        <br />
         <h1
-          className="text-white my-5 mx-5"
+          className="text-white mb-3 mx-5"
           style={{ fontWeight: "bolder", textTransform: "uppercase" }}
         >
           {location.pathname}{" "}
@@ -165,21 +161,21 @@ function Contact() {
                 <h6>
                   <i className="fa fa-envelope text-danger bg-light rounded p-2 mr-2"></i>
                   <a
-                    href="mailto:Contact@Bisquecrypto.com"
+                    href="mailto:Contact@croxvest.com"
                     className="text-light"
                   >
                     {" "}
-                    Contact@Bisquecrypto.com
+                    Contact@croxvest.com
                   </a>
                 </h6>
                 <h6>
                   <i className="fa fa-envelope text-danger bg-light rounded p-2 mr-2"></i>
                   <a
-                    href="mailto:support@Bisquecrypto.com"
+                    href="mailto:support@croxvest.com"
                     className="text-light"
                   >
                     {" "}
-                    support@Bisquecrypto.com
+                    support@croxvest.com
                   </a>
                 </h6>
               </div>

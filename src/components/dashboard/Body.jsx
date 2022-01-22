@@ -1,6 +1,6 @@
 import React from "react";
 
-import cover from "../../images/Bisquecrypto-logo (1)/vector/default-monochrome-black.svg";
+import cover from "../../images/crox/croxvest-nobg.png";
 import { logout } from "../auth/auth";
 
 function Body(props) {

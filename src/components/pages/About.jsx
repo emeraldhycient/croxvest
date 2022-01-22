@@ -14,12 +14,8 @@ function About() {
     <>
       <Netbackground>
         <Header />
-        <br />
-        <br />
-        <br />
-        <br />
         <h1
-          className="text-white my-5 mx-5"
+          className="text-white mb-3 mx-5"
           style={{ fontWeight: "bolder", textTransform: "uppercase" }}
         >
           {location.pathname}{" "}
@@ -50,8 +46,8 @@ function About() {
             <div className="col-md-1"></div>
             <div className="col-md-6 col-lg-6 col-sm-8">
               <div className="my-5">
-                <h6 className="text-muted">
-                  Bisquecrypto has no defined limits on size or structure, but
+                <p className="text-muted">
+                  croxvest has no defined limits on size or structure, but
                   generally targets direct equity investments of $10 million to
                   $100 million, as well as select smaller venture investments
                   With the advancement in technology & current world trends, the
@@ -60,14 +56,14 @@ function About() {
                   foreign exchange & cryptocurrency market up to a great deal.
                   However, an overwhelming majority of the people tend to get
                   confused when they opt to go beyond mainstream mediums of
-                  trading & investing. This is where our platform (Bisquecrypto)
+                  trading & investing. This is where our platform (croxvest)
                   comes to help and enable you to be capable of using modern
                   tools & techniques for enhancing your trading profits. Not
                   only for newbies, but we also aim to assist the intermediates
                   & even expert traders by providing them with all the latest
                   gadgets which can flourish their trading & investing
                   investments thoroughly.
-                </h6>
+                </p>
               </div>
               <div className="bg-dark p-2">
                 <h6 className="text-light mb-2">
@@ -77,21 +73,21 @@ function About() {
                 <h6>
                   <i className="fa fa-envelope text-danger bg-light rounded p-2 mr-2"></i>
                   <a
-                    href="mailto:Contact@bisquecrypto.com"
+                    href="mailto:Contact@croxvest.com"
                     className="text-light"
                   >
                     {" "}
-                    Contact@bisquecrypto.com
+                    Contact@croxvest.com
                   </a>
                 </h6>
                 <h6>
                   <i className="fa fa-envelope text-danger bg-light rounded p-2 mr-2"></i>
                   <a
-                    href="mailto:support@bisquecrypto.com"
+                    href="mailto:support@croxvest.com"
                     className="text-light"
                   >
                     {" "}
-                    support@Bisquecrypto.com
+                    support@croxvest.com
                   </a>
                 </h6>
               </div>

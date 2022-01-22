@@ -45,7 +45,7 @@ function Edituser({ userid }) {
 
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/admin/updateuser.php",
+      url: "https://api.croxvest.com/api/admin/updateuser.php",
       data: formdata,
     })
       .then((res) => {
@@ -80,7 +80,7 @@ function Edituser({ userid }) {
   useEffect(() => {
     axios
       .get(
-        `https://api.bisquecrypto.com/api/admin/userdetails.php?userid=${userid}`
+        `https://api.croxvest.com/api/admin/userdetails.php?userid=${userid}`
       )
       .then((res) => {
         //console.log(res);

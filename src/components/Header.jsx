@@ -1,60 +1,88 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-import cover from "../images/Bisquecrypto-logo (1)/vector/default-monochrome-white.svg";
-
+import logo from "../images/crox/croxvest-nobg.png";
 export default function Header() {
   return (
     <header className="">
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light shadow2">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i className="fa fa-bars text-white fa-2x"></i>
-        </button>
-        <a className="navbar-brand offset-md-1 offset-lg-1" href="/">
-          <img src={cover} alt="Bisquecrypto logo" width="200px" />
-        </a>
+      <div className="container">
+        <div className="row align-items-lg-center">
+          <div className="col-lg-12 col-md-12 col-12">
+            <nav className="navbar navbar-expand-lg main-nav navbar-dark">
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#mainNav"
+                  aria-controls="mainNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i className="fas fa-bars" />
+                </button>
+                <div
+                  className="col-lg-3 col-md-3 col d-flex justify-content-center"
+                  id="logoholder"
+                >
+                  {/* Site Logo */}
+                  <a href="/">
+                    <img src={logo} alt="" id="logo" />
+                  </a>
+                </div>
+              <div className="collapse navbar-collapse" id="mainNav">
+                {/* Site Menus */}
+                <ul className="navbar-nav">
+                  <li className="nav-item ">
+                    <a className="nav-link" href="/" style={{ color: "#fff" }}>
+                      HOME
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/about">
+                      ABOUT
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/login">
+                      LOGIN
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/signup">
+                      {" "}
+                      REGISTER
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="?a=affiliate">
+                      AFFILIATE
+                    </a>
+                  </li>
 
-        <div
-          className="collapse navbar-collapse offset-md-4 offset-lg-6 bg-dark"
-          id="navbarTogglerDemo03"
-        >
-          <ul className="navbar-nav mr-auto mt-2 mt-lg-0 ">
-            <li className="nav-item">
-              <a className="nav-link text-white" href="/">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="/about">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="/contact">
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="/faq">
-                Faq
-              </a>
-            </li>
-          </ul>
-          <button className="btn primary">
-            <Link to="/login" className="text-light">
-              Login
-            </Link>
-          </button>
+                  <li className="nav-item">
+                    <a className="nav-link" href="?a=cryptocurrency">
+                      {" "}
+                      CRYPTOCURRENCY
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/faq">
+                      FAQ
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/contact">
+                      CONTACT
+                    </a>
+                  </li>
+                  <li>
+                    <div id="google_translate_element" className="mt-3"></div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
   );
 }

@@ -52,7 +52,7 @@ function Withdrawal() {
     formdata.append("status", "processed");
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/admin/withdrawal.php",
+      url: "https://api.croxvest.com/api/admin/withdrawal.php",
       data: formdata,
     })
       .then((res) => {
@@ -65,7 +65,7 @@ function Withdrawal() {
 
   useEffect(() => {
     axios
-      .get("https://api.bisquecrypto.com/api/admin/withdrawal.php?all=all")
+      .get("https://api.croxvest.com/api/admin/withdrawal.php?all=all")
       .then((res) => {
         let mod = Object.values(res.data.data.withdrawal);
         setwithdrawals(mod);
@@ -74,7 +74,7 @@ function Withdrawal() {
 
     axios
       .get(
-        "https://api.bisquecrypto.com/api/admin/withdrawal.php?unprocessed=all"
+        "https://api.croxvest.com/api/admin/withdrawal.php?unprocessed=all"
       )
       .then((res) => {
         let mod = Object.values(res.data.data.withdrawal);
@@ -104,7 +104,7 @@ function Withdrawal() {
           <Body>
             <div className="container">
               <div className="row">
-                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2">
+                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2">
                   <h5 className="ml-2 text-dark">Withdrawal Request</h5>
                   <div
                     style={{
@@ -165,7 +165,7 @@ function Withdrawal() {
 
             <div className="container">
               <div className="row">
-                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2">
+                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2">
                   <h5 className="ml-2 text-dark">Withdrawal History</h5>
                   <div
                     style={{

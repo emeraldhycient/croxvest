@@ -39,7 +39,7 @@ function Login() {
 
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/auth/login.php",
+      url: "https://api.croxvest.com/api/auth/login.php",
       data: formdata,
     })
       .then((res) => {
@@ -91,7 +91,7 @@ function Login() {
       />
       <div className="container mt-5">
         <div className="row">
-          <div className="col-md-5 m-auto bg-white shadow pt-5">
+          <div className="col-md-5 col-11 m-auto bg-white border pt-5">
             <h3 className="textprimary text-center mt-5">Login</h3>
             <form
               action=""
@@ -103,7 +103,7 @@ function Login() {
                 type="text"
                 onChange={(e) => setemail(e.target.value)}
                 value={email}
-                className="form-control mb-3"
+                className="form-control form-control-lg mb-3"
                 placeholder="your email"
                 aria-label="your email"
                 aria-describedby="basic-addon1"
@@ -114,7 +114,7 @@ function Login() {
                 type="password"
                 onChange={(e) => setpassword(e.target.value)}
                 value={password}
-                className="form-control mb-3"
+                className="form-control form-control-lg mb-3"
                 placeholder="password"
                 aria-label="your password"
                 aria-describedby="basic-addon2"
@@ -130,12 +130,12 @@ function Login() {
                   Login
                 </button>
               ) : (
-                <button className="btn primary text-white col m-2">
+                <button className="btn btn-lg primary text-white col m-2">
                   Login
                 </button>
               )}
             </form>
-            <div className=" mb-5 mt-2 text-center">
+            <div className=" mb-5  mt-2 text-center">
               <a href="./signup" className=" text-muted">
                 signup
               </a>

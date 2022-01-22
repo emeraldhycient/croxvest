@@ -62,7 +62,7 @@ function Index() {
 
   useEffect(() => {
     axios
-      .get("https://api.bisquecrypto.com/api/admin/packages.php?all=all")
+      .get("https://api.croxvest.com/api/admin/packages.php?all=all")
       .then((res) => {
         setplans(res.data.data);
       })

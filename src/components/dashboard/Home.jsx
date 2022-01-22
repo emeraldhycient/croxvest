@@ -39,7 +39,7 @@ function Home() {
     formdata.append("userid", user);
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/user/userdetails.php",
+      url: "https://api.croxvest.com/api/user/userdetails.php",
       data: formdata,
     })
       .then((res) => {
@@ -53,7 +53,7 @@ function Home() {
     formdata.append("userid", user);
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/user/totaldeposit.php",
+      url: "https://api.croxvest.com/api/user/totaldeposit.php",
       data: formdata,
     })
       .then((res) => {
@@ -80,7 +80,7 @@ function Home() {
             </h4>
             <div className="container mt-5">
               <div className="row">
-                <div className="col-md-5 mt-auto ml-auto mr-auto mb-4 shadow bg-white p-3">
+                <div className="col-md-5 mt-auto ml-auto mr-auto mb-4 border bg-white p-3">
                   <div className="d-flex">
                     <div className="circle bg-danger mr-4">
                       <i className="fa fa-user fa-2x text-white"></i>
@@ -111,23 +111,14 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-5 mt-auto ml-auto mr-auto mb-4 shadow bg-white p-0">
-                  <h5 className="ml-2 text-dark">wallet</h5>
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "1px",
-                      backgroundColor: "#cacaca",
-                      marginBottom: "30px",
-                    }}
-                  ></div>
-                  <h6 className="text-primary mb-5 ml-2">
+                <div className="col-md-5 mt-auto ml-auto mr-auto mb-4 border bg-white p-0">
+                  <h6 className="text-primary my-2 ml-2">
                     Registered on : {userdetails.createdAt}
                   </h6>
-                  <h6 className="text-dark mb-5 ml-2">
+                  <h6 className="text-dark my-3 ml-2">
                     referral link{" "}
                     <span className="text-primary">
-                      https://api.bisquecrypto.com/signup/{user}
+                      https://api.croxvest.com/signup/{user}
                     </span>
                   </h6>
                   <div className="btn-group w-100 pl-2 pr-2">
@@ -145,10 +136,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="container mt-5">
-              <div className="row mb-5">
+            <div className="container mt-2">
+              <div className="row mb-3">
                 <div
-                  className="col-md-5 mt-auto ml-auto mr-auto mb-4 shadow bg-white "
+                  className="col-md-5 mt-auto ml-auto mr-auto mb-4 border bg-white "
                   id="box"
                 >
                   <div className=" pb-3">
@@ -173,7 +164,7 @@ function Home() {
                 </div>
 
                 <div
-                  className="col-md-5 mt-auto ml-auto mr-auto mb-4 shadow bg-white "
+                  className="col-md-5 mt-auto ml-auto mr-auto mb-4 border bg-white "
                   id="box"
                 >
                   <div className=" pb-3">

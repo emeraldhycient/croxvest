@@ -50,7 +50,7 @@ function Deposit() {
   };
 
   axios
-    .get("https://api.bisquecrypto.com/api/user/paymentmethods.php")
+    .get("https://api.croxvest.com/api/user/paymentmethods.php")
     .then((res) => {
       //console.log(res);
       setpaymentmethods(res.data.data);
@@ -79,20 +79,9 @@ function Deposit() {
             <h4>
               <i className="fa fa-compass text-primary"></i> {match.path}
             </h4>
-            <div className="container mt-4">
-              <div className="row">
-                <div className="col-md-6 mb-5 shadow bg-white d-flex justify-content-center align-items-center table-responsive">
-                  <LineCharts />
-                </div>
-                <div className="col-md-1"></div>
-                <div className="col-md-5 mb-5  shadow bg-white d-flex justify-content-center align-items-center table-responsive">
-                  <Piechart />
-                </div>
-              </div>
-            </div>
             <div className="container">
               <div className="row">
-                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2">
+                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2">
                   <h5 className="ml-2 text-dark">Deposit</h5>
                   <div
                     style={{
@@ -303,6 +292,17 @@ function Deposit() {
                       your username,fullname and your balance would reflect
                     </small>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="container mt-4">
+              <div className="row">
+                <div className="col-md-6 mb-5 border bg-white d-flex justify-content-center align-items-center table-responsive">
+                  <LineCharts />
+                </div>
+                <div className="col-md-1"></div>
+                <div className="col-md-5 mb-5  border bg-white d-flex justify-content-center align-items-center table-responsive">
+                  <Piechart />
                 </div>
               </div>
             </div>

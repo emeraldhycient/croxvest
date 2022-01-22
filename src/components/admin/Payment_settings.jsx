@@ -55,7 +55,7 @@ function Payment_settings() {
 
   const paymentmethods = () => {
     axios
-      .get("https://api.bisquecrypto.com/api/admin/paymentmethods.php?all=all")
+      .get("https://api.croxvest.com/api/admin/paymentmethods.php?all=all")
       .then((res) => {
         if (res.data.status === "success") {
           let data = res.data.data;
@@ -88,7 +88,7 @@ function Payment_settings() {
 
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/admin/paymentmethods.php",
+      url: "https://api.croxvest.com/api/admin/paymentmethods.php",
       data: formdata,
     })
       .then((res) => {
@@ -127,7 +127,7 @@ function Payment_settings() {
             </h4>
             <div className="container">
               <div className="row">
-                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2">
+                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2">
                   <h5 className="ml-2 text-dark">Payment methods</h5>
                   <div
                     style={{

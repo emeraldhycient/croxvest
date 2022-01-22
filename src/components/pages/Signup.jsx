@@ -53,7 +53,7 @@ function Signup() {
 
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/user/createaccount.php",
+      url: "https://api.croxvest.com/api/user/createaccount.php",
       data: formdata,
     })
       .then((res) => {
@@ -102,7 +102,7 @@ function Signup() {
 
   useEffect(() => {
     axios
-      .get("https://api.bisquecrypto.com/api/admin/packages.php?all=all")
+      .get("https://api.croxvest.com/api/admin/packages.php?all=all")
       .then((res) => {
         //console.log(res);
         let mod = Object.values(res.data.data);
@@ -128,18 +128,18 @@ function Signup() {
         pauseOnHover
       />
       <div className="container mt-5 mb-5">
-        <div className="row m-3">
-          <div className="col-md-7 m-auto bg-white shadow pt-2">
+        <div className="row my-3 mx-1">
+          <div className="col-md-7 col-12 m-auto bg-white border pt-2">
             <h3 className="textprimary text-center mt-5">Signup</h3>
             <form
               action=""
               method="post"
-              className="form-group mt-4 px-3"
+              className="form-group mt-4 px-1"
               onSubmit={submitForm}
             >
               <input
                 type="text"
-                className="form-control mb-3"
+                className="form-control form-control-lg mb-3"
                 onChange={(e) => setfname(e.target.value)}
                 value={fname}
                 placeholder="your Full name"
@@ -150,7 +150,7 @@ function Signup() {
 
               <input
                 type="text"
-                className="form-control mb-3"
+                className="form-control form-control-lg mb-3"
                 onChange={(e) => setusername(e.target.value)}
                 value={username}
                 placeholder="username"
@@ -163,7 +163,7 @@ function Signup() {
                 type="password"
                 onChange={(e) => setpassword(e.target.value)}
                 value={password}
-                className="form-control mb-3"
+                className="form-control  form-control-lg mb-3"
                 placeholder="Password"
                 aria-label="your password"
                 aria-describedby="basic-addon1"
@@ -182,7 +182,7 @@ function Signup() {
                 type="password"
                 onChange={(e) => setcpassword(e.target.value)}
                 value={cpassword}
-                className="form-control mb-3"
+                className="form-control form-control-lg mb-3"
                 placeholder="Confirm password"
                 aria-label="your password"
                 aria-describedby="basic-addon2"
@@ -191,7 +191,7 @@ function Signup() {
 
               <input
                 type="email"
-                className="form-control mb-3"
+                className="form-control form-control-lg mb-3"
                 onChange={(e) => setemail(e.target.value)}
                 value={email}
                 placeholder="your email"
@@ -204,7 +204,7 @@ function Signup() {
                 type="text"
                 onChange={(e) => setcountry(e.target.value)}
                 value={country}
-                className="form-control mb-3"
+                className="form-control form-control-lg mb-3"
                 placeholder="Enter Country"
                 aria-label="enter country"
                 aria-describedby="basic-addon1"
@@ -212,7 +212,7 @@ function Signup() {
               />
 
               <select
-                className="form-control mb-3"
+                className="form-control form-control-lg mb-3"
                 onChange={(e) => setplan(e.target.value)}
                 value={plan}
                 required
@@ -235,7 +235,7 @@ function Signup() {
               </select>
 
               <select
-                className="form-control mb-3"
+                className="form-control form-control-lg mb-3"
                 onChange={(e) => setCurrency(e.target.value)}
                 value={Currency}
                 required
@@ -247,7 +247,7 @@ function Signup() {
                 <option value="bitcoin ">&#8383; Bitcoin</option>
               </select>
               {isloading ? (
-                <button className="btn col primary text-white float-right mx-2 my-4">
+                <button className="btn btn-lg col primary text-white float-right mx-2 my-4">
                   <img
                     src={loading}
                     style={{ width: "30px", height: "30px" }}
@@ -257,7 +257,7 @@ function Signup() {
                 </button>
               ) : (
                 <button
-                  className="btn col primary text-white float-right mx-2 my-4"
+                  className="btn btn-lg col primary text-white float-right mx-2 my-4"
                   type="submit"
                 >
                   Register

@@ -1,0 +1,293 @@
+.nava {
+    width: 100%;
+    background: #ffffff !important;
+    min-height: 50px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.toggle-nava {
+    display: none;
+}
+
+.nava .lefta:first-child {
+    margin-top: 0px;
+}
+
+.nava .lefta {
+    float: left;
+    margin-top: 20px;
+}
+
+.nava .lefta li:first-child {
+    margin-left: 0px;
+}
+
+.nava .lefta li {
+    font-size: 14px;
+    float: left;
+    background: #eff1fd;
+    margin-left: 9px;
+    width: 182px;
+    border-radius: 5px;
+}
+
+.nava .lefta li a {
+    display: block;
+    padding: 7px 0px;
+    color: #5a5a5a;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.nava .lefta li a i {
+    color: #03225c;
+}
+
+.deshmid {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.deshdetils {
+    width: 50%;
+    background: #ffffff;
+    float: left;
+    border-radius: 6px;
+    border: 2px solid #e4e4e4;
+}
+
+.deshbtn {
+    width: 17%;
+    float: left;
+    margin-left: 50px;
+}
+
+.duseri {
+    width: 16%;
+    float: left;
+    overflow: hidden;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.dusertext {
+    width: 76%;
+    float: left;
+    margin-left: 20px;
+}
+
+.dusrone:first-child {
+    margin-top: 0px;
+}
+
+.dusrone {
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+}
+
+.dusrone p {
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.dusrone p span {
+    float: right;
+    color: #000;
+}
+
+.btnone {
+    width: 100%;
+    overflow: hidden;
+}
+
+.btnone a {
+    padding: 13px 0px;
+}
+
+.a-link {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    background-color: #03225c;
+    border-radius: 0px;
+    border-radius: 3px;
+}
+
+.btnoneb a {
+    background: #03225c;
+    color: #fff;
+    padding: 13px 0px;
+}
+
+.btnoneb {
+    width: 100%;
+    margin-top: 18px;
+    overflow: hidden;
+}
+
+.deshstate {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.stateone {
+    width: 22.6%;
+    height: 236px;
+    background-repeat: round;
+    margin-left: 36px;
+    float: left;
+}
+
+.stateone:first-child {
+    margin-left: 0px;
+}
+
+.statei {
+    width: auto;
+    text-align: center;
+    margin-top: 43px;
+}
+
+.statework {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.statework p {
+    font-size: 16px;
+    color: #000;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.statework p span {
+    color: #000;
+    font-size: 18px;
+}
+
+.deshdown {
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.accountdetails {
+    width: 50%;
+    background: #03225c;
+    float: left;
+    border-radius: 2px;
+}
+
+.referbox {
+    width: 45%;
+    float: right;
+    margin-top: 34px;
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+.account_head {
+    width: 100%;
+}
+
+.account_head p {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.detailsone {
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+    border-bottom: 1px dotted #e6e6e6;
+}
+
+.detailsone p {
+    color: #ffffffcf;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.detailsone p span {
+    float: right;
+}
+
+.refertittle {
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.referbanner {
+    width: 100%;
+    background-color: #a29b9d;
+    border-bottom: 2px solid#007bff;
+    padding: 20px 0px;
+    margin-top: 10px;
+}
+
+.referbanner p {
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .nava .lefta li {
+        font-size: 14px;
+        float: left;
+        background: #eff1fd;
+        /* margin-left: 9px; */
+        width: 163px;
+        border-radius: 5px;
+        margin: 0px 9px 6px 0px;
+    }
+    .deshdetils {
+        width: 100%;
+        background: #ffffff;
+        float: left;
+        border-radius: 6px;
+        border: 2px solid #e4e4e4;
+    }
+    .deshbtn {
+        width: 70%;
+        float: left;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    .stateone {
+        width: 100%;
+        height: 236px;
+        background-repeat: round;
+        margin-left: 0;
+        float: left;
+        background-image: url(../images/statebg.png);
+    }
+    .accountdetails {
+        width: 100%;
+        background: #03225c;
+        float: left;
+        border-radius: 2px;
+    }
+    .referbox {
+        width: 100%;
+        float: right;
+        margin-top: 34px;
+    }
+}

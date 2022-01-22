@@ -1,0 +1,121 @@
+.latest-row {
+    float: left;
+}
+
+.latest-row ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #fff;
+    border-bottom: 0;
+}
+
+.latest-row ul li {
+    line-height: 35px;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    color: #414345;
+    padding: 0 15px 0 25px;
+    font-weight: 600;
+}
+
+.latest-row ul li h3 {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.latest-row ul li i {
+    display: inline-block;
+    float: right;
+}
+
+.latest-row ul li span {
+    display: inline-block;
+    margin: 0px 5%;
+}
+
+.latest-row ul li span.span1 {
+    width: 25%;
+}
+
+.latest-row ul li:nth-child(odd) {
+    background: #e7eaee;
+}
+
+.latest-row1 ul li.title {
+    background: url(https://fxtrades.ltd/assets/images/icon-dol.png) #0a3465 no-repeat 13px;
+    padding-left: 55px;
+    line-height: 37px;
+}
+
+.latest-row3 ul li.title {
+    background: url(https://fxtrades.ltd/assets/images/icon-dol2.png) #ff4500 no-repeat 13px;
+    padding-left: 55px;
+    line-height: 37px;
+}
+
+.latest-row3 {
+    float: right;
+}
+
+all-calcu {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    margin-top: 40px;
+    padding-bottom: 32px;
+}
+
+.box-1 {
+    float: left;
+    width: 188px;
+    margin-left: 47px;
+}
+
+.box-1:first-child {
+    margin-left: 0px;
+}
+
+.box-1 select {
+    width: 105%;
+    font-family: inherit;
+    padding: 14px 10px;
+    border-radius: 5px;
+    background: #4e4e91;
+    border: none;
+    color: #fffbfb;
+}
+
+.box-1 input {
+    font-family: inherit;
+    padding: 9px 10px;
+    color: #fdf9f9;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    background: #4e4e91;
+}
+
+.box-1 label {
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 34px;
+    text-transform: uppercase;
+}
+
+.single-banner {
+    background-image: url(./assets/img/slider/02.jpg)
+}
+
+.counterup-section {
+    background-image: url(./assets/img/bg/counterup.jpg);
+}

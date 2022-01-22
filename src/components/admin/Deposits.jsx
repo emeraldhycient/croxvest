@@ -65,7 +65,7 @@ function Deposits() {
 
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/admin/makedeposit.php",
+      url: "https://api.croxvest.com/api/admin/makedeposit.php",
       data: formdata,
     })
       .then((res) => {
@@ -84,7 +84,7 @@ function Deposits() {
 
   useEffect(() => {
     axios
-      .get("https://api.bisquecrypto.com/api/admin/packages.php?all=all")
+      .get("https://api.croxvest.com/api/admin/packages.php?all=all")
       .then((res) => {
         //console.log(res);
         let mod = Object.values(res.data.data);
@@ -93,7 +93,7 @@ function Deposits() {
       .catch((err) => notify(err.response.data.message));
 
     axios
-      .get("https://api.bisquecrypto.com/api/admin/deposits.php")
+      .get("https://api.croxvest.com/api/admin/deposits.php")
       .then((res) => {
         //console.log(res);
         let mod = Object.values(res.data.data.deposits);
@@ -125,7 +125,7 @@ function Deposits() {
             </h4>
             <div className="container">
               <div className="row">
-                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2 w-100">
+                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2 w-100">
                   <h5 className="ml-2 text-dark">Make Deposit</h5>
                   <div
                     style={{
@@ -263,7 +263,7 @@ function Deposits() {
             </div>
             <div className="container">
               <div className="row">
-                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2">
+                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2">
                   <h5 className="ml-2 text-dark">Deposit History</h5>
                   <div
                     style={{

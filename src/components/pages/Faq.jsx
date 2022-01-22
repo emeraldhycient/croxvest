@@ -14,9 +14,9 @@ function Faq() {
       isOpen: false,
     },
     {
-      question: "Is Bisquecrypto Registered",
+      question: "Is croxvest Registered",
       answer:
-        "Bisquecrypto is registered with the Uk Securities & Investment company , and also registered with the UK Department of Industry, Innovation & Science.we are also registered with Eu",
+        "croxvest is registered with the Uk Securities & Investment company , and also registered with the UK Department of Industry, Innovation & Science.we are also registered with Eu",
       isOpen: false,
     },
     {
@@ -47,10 +47,10 @@ function Faq() {
   };
 
   return (
-    <>
+    <div className="bg-dark">
       <Header />
-      <div className="container mt-5 pt-5">
-        <div className="row pt-5">
+      <div className="container">
+        <div className="row">
           <div className="col-md-4">
             <img src={Question} className="w-100 h-100" alt="" srcset="" />
           </div>
@@ -67,7 +67,7 @@ function Faq() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

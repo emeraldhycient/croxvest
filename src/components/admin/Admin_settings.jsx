@@ -61,7 +61,7 @@ function Admin_settings() {
 
     axios({
       method: "POST",
-      url: "https://api.bisquecrypto.com/api/auth/updatesettings.php",
+      url: "https://api.croxvest.com/api/auth/updatesettings.php",
       data: formdata,
     })
       .then((e) => {
@@ -109,7 +109,7 @@ function Admin_settings() {
 
             <div className="container">
               <div className="row">
-                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 shadow bg-white pt-2">
+                <div className="col-md-11 ml-auto mr-auto mt-4 mb-5 border bg-white pt-2">
                   <h5 className="ml-2 text-dark">Update Details</h5>
                   <div
                     style={{

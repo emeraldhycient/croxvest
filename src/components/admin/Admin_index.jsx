@@ -30,7 +30,7 @@ function Admin_index() {
 
   const gettotalusers = () => {
     axios
-      .get("https://api.bisquecrypto.com/api/admin/totalusers.php")
+      .get("https://api.croxvest.com/api/admin/totalusers.php")
       .then((res) => {
         //console.log(res);
         settotaluser(res.data.data.users);
@@ -40,7 +40,7 @@ function Admin_index() {
 
   const getdeposit = () => {
     axios
-      .get("https://api.bisquecrypto.com/api/admin/totaldeposits.php")
+      .get("https://api.croxvest.com/api/admin/totaldeposits.php")
       .then((res) => {
         //console.log(res);
         settotaldeposit(res.data.data.amount);
@@ -64,7 +64,7 @@ function Admin_index() {
             <div className="container mt-5">
               <div className="row mb-5">
                 <div
-                  className="col-md-5 mt-auto ml-auto mr-auto mb-4 shadow bg-white "
+                  className="col-md-5 mt-auto ml-auto mr-auto mb-4 border bg-white "
                   id="box"
                 >
                   <div className=" pb-3">
@@ -86,7 +86,7 @@ function Admin_index() {
                   </div>
                 </div>
                 <div
-                  className="col-md-5 mt-auto ml-auto mr-auto mb-4 shadow bg-white "
+                  className="col-md-5 mt-auto ml-auto mr-auto mb-4 border bg-white "
                   id="box"
                 >
                   <div className=" pb-3">
@@ -112,11 +112,11 @@ function Admin_index() {
 
             <div className="container">
               <div className="row">
-                <div className="col-md-6 mb-5 shadow bg-white d-flex justify-content-center align-items-center table-responsive">
+                <div className="col-md-6 mb-5 border bg-white d-flex justify-content-center align-items-center table-responsive">
                   <LineCharts />
                 </div>
                 <div className="col-md-1"></div>
-                <div className="col-md-5 mb-5  shadow bg-white d-flex justify-content-center align-items-center table-responsive">
+                <div className="col-md-5 mb-5  border bg-white d-flex justify-content-center align-items-center table-responsive">
                   <Piechart />
                 </div>
               </div>

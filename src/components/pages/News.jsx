@@ -19,7 +19,7 @@ function News() {
           <img src={btc2} width="100%" height="260px" alt="bisquecrypto news" />
           <div className="m-2">
             <h5 className="textprimary mr-1">
-              Coins to buy before December 2021
+              Coins to buy before December 2023
             </h5>
             <p className="text-muted">
               The cryptocurrency market includes hundreds of different
@@ -33,7 +33,7 @@ function News() {
           <img src={btc1} width="100%" height="260px" alt="bisquecrypto news" />
           <div className="m-2">
             <h5 className="textprimary mr-1">
-              Coins to buy before December 2021
+              Coins to buy before December 2023
             </h5>
             <p className="text-muted">
               The cryptocurrency market includes hundreds of different
@@ -47,7 +47,7 @@ function News() {
           <img src={btc3} width="100%" height="260px" alt="bisquecrypto news" />
           <div className="m-2">
             <h5 className="textprimary mr-1">
-              Coins to buy before December 2021
+              Coins to buy before December 2023
             </h5>
             <p className="text-muted">
               The cryptocurrency market includes hundreds of different

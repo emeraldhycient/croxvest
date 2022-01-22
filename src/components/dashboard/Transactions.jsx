@@ -3,7 +3,7 @@ import React from 'react'
 function Transactions() {
     return (
         <div className="container">
-            <div className="col-md-11 ml-auto mr-auto mt-auto mb-5 shadow bg-white pt-2">
+            <div className="col-md-12 ml-auto mr-auto mt-auto mb-5 border bg-white pt-2">
 
                 <h5 className="ml-2 text-dark">Transaction History</h5>
                 <div style={{ width: '100%', height: '1px', backgroundColor: '#cacaca' }}></div>
