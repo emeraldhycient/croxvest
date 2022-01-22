@@ -45,7 +45,7 @@ function Members() {
 
   const handleDelete = (id) => {
     axios
-      .get(`https://api.croxvest.com/api/admin/deleteuser.php?userid=${id}`)
+      .get(`http://api.croxvest.com/api/admin/deleteuser.php?userid=${id}`)
       .then((res) => {
         notify(res.data.message);
         setTimeout(() => {
@@ -59,7 +59,7 @@ function Members() {
 
   useEffect(() => {
     axios
-      .get("https://api.croxvest.com/api/admin/users.php")
+      .get("http://api.croxvest.com/api/admin/users.php")
       .then((res) => {
         let mod = Object.values(res.data.data.users);
         setusers(mod);

@@ -53,7 +53,7 @@ function Signup() {
 
     axios({
       method: "POST",
-      url: "https://api.croxvest.com/api/user/createaccount.php",
+      url: "http://api.croxvest.com/api/user/createaccount.php",
       data: formdata,
     })
       .then((res) => {
@@ -66,6 +66,7 @@ function Signup() {
         console.log(e);
       })
       .catch((err) => {
+        console.log(err)
         notify(err.response.data.message);
       })
       .finally(() => {
@@ -102,7 +103,7 @@ function Signup() {
 
   useEffect(() => {
     axios
-      .get("https://api.croxvest.com/api/admin/packages.php?all=all")
+      .get("http://api.croxvest.com/api/admin/packages.php?all=all")
       .then((res) => {
         //console.log(res);
         let mod = Object.values(res.data.data);

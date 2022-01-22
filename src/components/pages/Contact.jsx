@@ -47,7 +47,7 @@ function Contact() {
 
     axios({
       method: "POST",
-      url: " https://api.croxvest.com/api/user/message.php",
+      url: " http://api.croxvest.com/api/user/message.php",
       data: formdata,
     })
       .then((res) => {

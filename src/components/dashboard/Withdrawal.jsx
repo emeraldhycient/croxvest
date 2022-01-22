@@ -61,7 +61,7 @@ function Withdrawal() {
 
     axios({
       method: "POST",
-      url: "https://api.croxvest.com/api/user/withdrawal.php",
+      url: "http://api.croxvest.com/api/user/withdrawal.php",
       data: formdata,
     })
       .then((res) => {

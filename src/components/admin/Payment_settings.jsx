@@ -55,7 +55,7 @@ function Payment_settings() {
 
   const paymentmethods = () => {
     axios
-      .get("https://api.croxvest.com/api/admin/paymentmethods.php?all=all")
+      .get("http://api.croxvest.com/api/admin/paymentmethods.php?all=all")
       .then((res) => {
         if (res.data.status === "success") {
           let data = res.data.data;
@@ -88,7 +88,7 @@ function Payment_settings() {
 
     axios({
       method: "POST",
-      url: "https://api.croxvest.com/api/admin/paymentmethods.php",
+      url: "http://api.croxvest.com/api/admin/paymentmethods.php",
       data: formdata,
     })
       .then((res) => {

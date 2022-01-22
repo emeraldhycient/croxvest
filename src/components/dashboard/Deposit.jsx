@@ -50,7 +50,7 @@ function Deposit() {
   };
 
   axios
-    .get("https://api.croxvest.com/api/user/paymentmethods.php")
+    .get("http://api.croxvest.com/api/user/paymentmethods.php")
     .then((res) => {
       //console.log(res);
       setpaymentmethods(res.data.data);

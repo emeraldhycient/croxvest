@@ -41,7 +41,7 @@ function Messages() {
 
   useEffect(() => {
     axios
-      .get("https://api.croxvest.com/api/admin/messages.php")
+      .get("http://api.croxvest.com/api/admin/messages.php")
       .then((res) => {
         // console.log(res);
         let mod = Object.values(res.data.data);

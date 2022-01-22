@@ -29,7 +29,7 @@ function Packages() {
 
   useEffect(() => {
     axios
-      .get("https://api.croxvest.com/api/admin/packages.php?all=all")
+      .get("http://api.croxvest.com/api/admin/packages.php?all=all")
       .then((res) => {
         //console.log(res);
         let mod = Object.values(res.data.data);

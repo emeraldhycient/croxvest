@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    #logo {
+        width: 110px;
+        height: 110px;
+    }
+    #logoholder {
+        margin-top: -8%;
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    #logo {
+        width: 110px;
+    }
+}

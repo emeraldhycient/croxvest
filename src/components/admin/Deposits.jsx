@@ -65,7 +65,7 @@ function Deposits() {
 
     axios({
       method: "POST",
-      url: "https://api.croxvest.com/api/admin/makedeposit.php",
+      url: "http://api.croxvest.com/api/admin/makedeposit.php",
       data: formdata,
     })
       .then((res) => {
@@ -84,7 +84,7 @@ function Deposits() {
 
   useEffect(() => {
     axios
-      .get("https://api.croxvest.com/api/admin/packages.php?all=all")
+      .get("http://api.croxvest.com/api/admin/packages.php?all=all")
       .then((res) => {
         //console.log(res);
         let mod = Object.values(res.data.data);
@@ -93,7 +93,7 @@ function Deposits() {
       .catch((err) => notify(err.response.data.message));
 
     axios
-      .get("https://api.croxvest.com/api/admin/deposits.php")
+      .get("http://api.croxvest.com/api/admin/deposits.php")
       .then((res) => {
         //console.log(res);
         let mod = Object.values(res.data.data.deposits);

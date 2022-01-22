@@ -2,6 +2,8 @@ import React from "react";
 
 import cover from "../../images/crox/croxvest-nobg.png";
 import { logout } from "../auth/auth";
+import "./style.css"
+
 
 function Body(props) {
   return (
@@ -11,8 +13,8 @@ function Body(props) {
           <img
             src={cover}
             alt=""
-            className="navbar-brand offset-md-2 offset-sm-2"
-            style={{ width: "130px", height: "70px" }}
+            className="offset-md-2 offset-sm-2"
+            id="logo"
           />
           <div className="text-right">
             <i

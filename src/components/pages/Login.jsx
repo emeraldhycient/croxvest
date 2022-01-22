@@ -39,7 +39,7 @@ function Login() {
 
     axios({
       method: "POST",
-      url: "https://api.croxvest.com/api/auth/login.php",
+      url: "http://api.croxvest.com/api/auth/login.php",
       data: formdata,
     })
       .then((res) => {

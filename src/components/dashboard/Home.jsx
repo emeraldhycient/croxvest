@@ -39,7 +39,7 @@ function Home() {
     formdata.append("userid", user);
     axios({
       method: "POST",
-      url: "https://api.croxvest.com/api/user/userdetails.php",
+      url: "http://api.croxvest.com/api/user/userdetails.php",
       data: formdata,
     })
       .then((res) => {
@@ -53,7 +53,7 @@ function Home() {
     formdata.append("userid", user);
     axios({
       method: "POST",
-      url: "https://api.croxvest.com/api/user/totaldeposit.php",
+      url: "http://api.croxvest.com/api/user/totaldeposit.php",
       data: formdata,
     })
       .then((res) => {
@@ -78,7 +78,7 @@ function Home() {
             <h4>
               <i className="fa fa-compass text-primary"></i> {match.path}
             </h4>
-            <div className="container mt-5">
+            <div className="container">
               <div className="row">
                 <div className="col-md-5 mt-auto ml-auto mr-auto mb-4 border bg-white p-3">
                   <div className="d-flex">
@@ -92,7 +92,7 @@ function Home() {
                           {userdetails.username}
                         </strong>
                       </h6>
-                      <h6 className="text-muted">
+                      <h6 className="text-muted d-none">
                         <i className="fa fa-phone text-primary mr-2 mr-md-3"></i>
                       </h6>
                       <h6>
@@ -116,10 +116,9 @@ function Home() {
                     Registered on : {userdetails.createdAt}
                   </h6>
                   <h6 className="text-dark my-3 ml-2">
-                    referral link{" "}
-                    <span className="text-primary">
-                      https://api.croxvest.com/signup/{user}
-                    </span>
+                    referral link
+                    <input type="text" className="form-control" defaultValue={`http://api.croxvest.com/signup/${user}`} id="" />
+                   
                   </h6>
                   <div className="btn-group w-100 pl-2 pr-2">
                     <button className="btn btn-primary col">
