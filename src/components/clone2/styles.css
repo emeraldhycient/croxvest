@@ -1,0 +1,2648 @@
+@import url("https://coinbitinvestment.com/css.css");
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    letter-spacing: 0.5px;
+    padding: 0px;
+    color: #545454;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.clr {
+    clear: both;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+:-moz-placeholder {
+    color: #000;
+}
+
+::-moz-placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+
+/*-----placheholder-color-------
+.amounttype input::-webkit-input-placeholder{
+	color:#FFFFFF;
+	}----------*/
+
+a {
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    height: auto;
+    cursor: pointer;
+    width: 100%;
+    color: #f0b53a;
+    background-color: #1b334d;
+    font-size: 17px;
+    padding: 14px 0px;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b334d;
+}
+
+input[type="button"] {
+    height: auto;
+    cursor: pointer;
+    width: 100%;
+    color: #f0b53a;
+    background-color: #1b334d;
+    font-size: 17px;
+    padding: 14px 0px;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+input[type="button"]:hover {
+    background-color: #1b334d;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 17px;
+    width: 98%;
+    height: 100%;
+    border: none;
+    padding: 12px 6px;
+    background-color: #ffffff;
+    color: #000;
+    outline: none;
+    border: 1px solid#ccc;
+}
+
+textarea {
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+
+.text-area textarea {
+    height: 85%;
+    width: 97%;
+}
+
+.a-link {
+    width: 100%;
+    height: auto;
+    padding: 14px 0px;
+    font-size: 18px;
+    color: #f0b53a;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #1b334d;
+    border-radius: 6px;
+}
+
+.a-link:hover {
+    background-color: #172f49;
+    transition: all 0.5s ease-in-out;
+}
+
+select {
+    height: auto;
+    width: 26%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #000;
+    outline: none;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+#slider {
+    width: 100%;
+    height: 600px;
+    min-width: 1170px;
+    background: url(https://coinbitinvestment.com/images/slider.png) center top / cover no-repeat transparent;
+}
+
+#sliderb {
+    width: 100%;
+    height: 277px;
+    min-width: 1170px;
+    background: url(https://coinbitinvestment.com/images/contact.png) center top / cover no-repeat transparent;
+}
+
+#sub_slider {
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header_up {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.logo {
+    width: 310px;
+    float: left;
+    padding: 15px 0px;
+    overflow: hidden;
+}
+
+.logo a img {
+    width: 83%;
+}
+
+.header_right {
+    width: 830px;
+    float: right;
+    height: auto;
+}
+
+.header_rightup {
+    width: 100%;
+    height: auto;
+}
+
+.phone {
+    width: 330px;
+    float: left;
+    padding: 15px 0px;
+}
+
+.phone p i {
+    color: #1b334d;
+}
+
+.phone p {
+    color: #1b334d;
+}
+
+.btc {
+    width: auto;
+    padding: 14px 0px;
+    float: left;
+}
+
+.btc p i {
+    color: #1b334d;
+}
+
+.btn {
+    width: 250px;
+    float: right;
+    height: auto;
+}
+
+.signin {
+    width: 120px;
+    float: left;
+    overflow: hidden;
+}
+
+.signin a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #1b334d38;
+    text-align: center;
+    padding: 14px 0px;
+}
+
+.signup {
+    width: 130px;
+    float: left;
+    overflow: hidden;
+}
+
+.signup a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #1b334d;
+    text-align: center;
+    padding: 14px 0px;
+}
+
+.menu {
+    width: auto;
+    height: auto;
+    float: right;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    font-size: 14px;
+    color: #353535;
+    padding: 12px 16px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background: #e0e4e7;
+    border-bottom: 1px solid#1b334d;
+}
+
+.slidtext {
+    width: 100%;
+    margin-top: 170px;
+    height: auto;
+    overflow: hidden;
+}
+
+.getstarted {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.getstarted p {
+    color: #e98f00;
+    font-size: 26px;
+    font-weight: 700;
+    -webkit-transform: scale(1, 1.2);
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px #272727;
+}
+
+.getstarted p span {
+    color: #1b334d;
+}
+
+.slog {
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    overflow: hidden;
+}
+
+.slog p {
+    line-height: 30px;
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+}
+
+.start {
+    width: 235px;
+    height: auto;
+    margin-top: 30px;
+}
+
+#content {
+    width: 100%;
+    height: auto;
+    min-width: 1170px;
+    background: url(https://coinbitinvestment.com/images/content.png) center top / cover no-repeat transparent;
+}
+
+#sub_content {
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 35px 0px;
+}
+
+.headline {
+    width: auto;
+    text-align: center;
+}
+
+.headline p {
+    font-size: 24px;
+    color: #1b334d;
+    font-weight: 500;
+}
+
+.get_border {
+    width: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.workst {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.works_one {
+    width: 235px;
+    float: left;
+    overflow: hidden;
+    margin-left: 66px;
+}
+
+.works_one:first-child {
+    margin-left: 0px;
+}
+
+.worksi {
+    width: auto;
+    text-align: center;
+}
+
+.workhed {
+    width: auto;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.workhed p {
+    font-size: 16px;
+    color: #1b334d;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.work_textr {
+    width: auto;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 25px;
+    text-transform: capitalize;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.workborder {
+    width: 100%;
+    background-image: url(https://coinbitinvestment.com/images/steps.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.workborder p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    padding-left: 6px;
+}
+
+.plan_all {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.all_plana {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.plana {
+    width: 358px;
+    height: 526px;
+    float: left;
+    background-image: url(https://coinbitinvestment.com/images/planbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+}
+
+.plana:first-child {
+    margin-left: 0px;
+}
+
+.plan_amount {
+    width: auto;
+    margin: 0 auto;
+    display: table;
+    margin-top: 163px;
+}
+
+.plan_percent {
+    width: auto;
+    float: left;
+    overflow: hidden;
+}
+
+.plan_percent p {
+    font-size: 36px;
+    color: #f0b53a;
+    font-weight: 600;
+}
+
+.daily_for {
+    width: auto;
+    float: left;
+    margin-left: 10px;
+}
+
+.daily_for p {
+    font-size: 20px;
+    color: #545454;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.days {
+    width: auto;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.days p {
+    font-size: 18px;
+    color: #545454;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.plan_border {
+    width: auto;
+    margin: 0 auto;
+    display: table;
+    margin-top: 15px;
+}
+
+.mintext {
+    width: 280px;
+    margin: 0 auto;
+    display: table;
+    overflow: hidden;
+}
+
+.min_one {
+    width: auto;
+    margin-top: 15px;
+}
+
+.min_one:first-child {
+    margin-top: 5px;
+}
+
+.min_one p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #545454;
+}
+
+.min_one p span {
+    float: right;
+}
+
+.makedeposit {
+    width: 170px;
+    height: auto;
+    margin: 0 auto;
+    display: table;
+    margin-top: 20px;
+}
+
+.makedeposit a {
+    border-radius: 3px;
+    padding: 10px 0px;
+}
+
+.chooseg {
+    width: 100%;
+    background-image: url(https://coinbitinvestment.com/images/videobg.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 40px;
+}
+
+.features_left {
+    width: 495px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.chooseright {
+    width: auto;
+    float: right;
+    margin-right: 40px;
+    margin-top: 98px;
+}
+
+.choose_head {
+    width: auto;
+    text-align: center;
+}
+
+.choose_head p {
+    color: #f0b53a;
+    font-size: 24px;
+}
+
+.choose_all {
+    width: 100%;
+    margin-top: 24px;
+    overflow: hidden;
+}
+
+.fetures-one {
+    height: auto;
+    width: 100%;
+    /* float:left; */
+    overflow: hidden;
+    margin-top: 26px;
+}
+
+.fetures-one:first-child {
+    margin-top: 0px;
+}
+
+.feture-box {
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+.fetures-text {
+    height: auto;
+    width: 428px;
+    float: right;
+    overflow: hidden;
+}
+
+.text-head {
+    height: auto;
+    width: 100%;
+    /* float:left; */
+    overflow: hidden;
+}
+
+.text-head p {
+    color: #ffb100;
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.text-head p span {
+    color: #fff;
+}
+
+.text-sed {
+    height: auto;
+    width: 100%;
+    /* float:left; */
+    overflow: hidden;
+    margin-top: 2px;
+    color: #ffffffd4;
+    letter-spacing: 0px;
+    text-align: justify;
+}
+
+.text-sed p {
+    font-size: 13px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+}
+
+.videobox {
+    width: auto;
+    float: right;
+}
+
+.all_statisttics {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.statis_one {
+    width: 172px;
+    height: auto;
+    background: #e8eef5;
+    float: left;
+    padding: 13px 0px;
+    border-top-left-radius: 45px;
+    margin-left: 67px;
+    border-bottom-right-radius: 45px;
+    border: 1px solid #ccc;
+}
+
+.statis_one:first-child {
+    margin-left: 0px;
+}
+
+.statis_tittle {
+    width: 100%;
+    height: auto;
+}
+
+.statis_tittle p {
+    font-size: 22px;
+    text-align: center;
+    color: #545454;
+}
+
+.statis_tittlea {
+    width: 100%;
+    height: auto;
+}
+
+.statis_tittlea p {
+    font-size: 18px;
+    text-align: center;
+    color: #545454;
+}
+
+.statebg {
+    height: 60px;
+    width: 60px;
+    background-color: #f0b53a;
+    border-radius: 50%;
+    margin: 13px auto;
+    text-align: center;
+    display: table;
+}
+
+.statebg p i {
+    text-align: center;
+    font-size: 30px;
+    line-height: 57px;
+    color: #fff;
+}
+
+.about_down {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.about_left {
+    width: auto;
+    float: left;
+}
+
+.about_right {
+    width: 665px;
+    float: right;
+    overflow: hidden;
+}
+
+.about_textr {
+    width: 100%;
+    height: auto;
+}
+
+.about_textr p {
+    text-align: justify;
+    line-height: 35px;
+}
+
+.about_textr p span a {
+    color: #1b334d;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.payment {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-top: 40px;
+    /* margin: 38px 0px; */
+}
+
+.payment ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.payment ul li {
+    float: left;
+    margin-left: 28px;
+}
+
+.payment ul li:first-child {
+    margin-left: 0px;
+}
+
+.paymentul li a {
+    display: block;
+}
+
+#footer {
+    width: 100%;
+    height: 210px;
+    min-width: 1170px;
+    background: url(https://coinbitinvestment.com/images/footer.png) center top / cover no-repeat transparent;
+}
+
+#sub_footer {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 30px 0px;
+    overflow: hidden;
+}
+
+.footer_one {
+    width: 375px;
+    float: left;
+}
+
+.fologo {
+    width: 100%;
+}
+
+.fologo_text {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.fologo_text p {
+    font-size: 12px;
+    color: #fff;
+    line-height: 23px;
+}
+
+.footer_two {
+    width: 200px;
+    margin-left: 110px;
+    float: left;
+}
+
+.site-head {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.site-head p {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.site-head p i {
+    color: #f0b53a;
+}
+
+.phonea {
+    height: auto;
+    width: 100%;
+    color: aliceblue;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.phonea p i {
+    color: #f9af28;
+}
+
+.footer_three {
+    width: 350px;
+    float: right;
+}
+
+.menu-down {
+    height: auto;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.link-one {
+    height: auto;
+    width: 160px;
+    float: left;
+    overflow: hidden;
+}
+
+.link-one ul {
+    list-style: none;
+}
+
+.link-one ul li {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.link-one ul li a {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 14px;
+    display: block;
+}
+
+.link-one ul li a i {
+    color: #f0b53a;
+    margin-right: 2px;
+    font-size: 5px;
+}
+
+.link-one ul li a:hover {
+    color: #f0b53a;
+}
+
+#down_footer {
+    width: 100%;
+    height: auto;
+    background: #1b334d;
+    min-width: 1170px;
+}
+
+#sub_footera {
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0px;
+}
+
+.reserved {
+    width: auto;
+    float: left;
+}
+
+.reserved p {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.mediaal {
+    width: auto;
+    float: right;
+}
+
+.media_one {
+    width: auto;
+    float: left;
+}
+
+.media_one a {
+    color: #f3a706;
+}
+
+.media_one a i {
+    color: #f3a706;
+}
+
+#other {
+    width: 100%;
+    height: auto;
+    min-width: 1170px;
+    background: url(https://coinbitinvestment.com/images/register.png) center top / cover no-repeat transparent;
+}
+
+#sub_other {
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px 0px;
+}
+
+.other_box {
+    width: 520px;
+    height: auto;
+    padding: 30px 40px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: table;
+    border-radius: 4px;
+    background-color: #ffffff17;
+}
+
+.alogo {
+    width: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.rhead {
+    width: 100%;
+    margin-top: 65px;
+    overflow: hidden;
+}
+
+.rhead p {
+    color: #f0b53a;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.rborder {
+    width: auto;
+    text-align: center;
+}
+
+.rboxall {
+    width: 100%;
+    margin-top: 19px;
+}
+
+.ruser_one {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.ruser_one:first-child {
+    margin-top: 0px;
+}
+
+.ricon {
+    width: 40px;
+    margin-top: 30px;
+    float: left;
+}
+
+.rboxr {
+    width: 480px;
+    float: left;
+}
+
+.rboxra {
+    width: 210px;
+    float: left;
+}
+
+.r_tittle {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.r_tittle p {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.rtype {
+    width: 97%;
+    height: auto;
+    margin-top: 2px;
+}
+
+.rtype input {
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.rtypeab {
+    width: 97%;
+    height: auto;
+    margin-top: 2px;
+}
+
+.rtypeab input {
+    border: none;
+    border-radius: 5px;
+    background: #f6f8fa;
+    border: 1px solid#d5d7d9;
+    padding-left: 15px;
+}
+
+.ruser_two {
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.rleft {
+    width: 250px;
+    float: left;
+    margin-left: 16px;
+}
+
+.rleft:first-child {
+    margin-left: 0px;
+}
+
+.terms_upline {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+.check-text {
+    height: auto;
+    width: auto;
+    float: left;
+    overflow: hidden;
+    display: table;
+}
+
+.check-box {
+    height: auto;
+    width: 30px;
+    float: left;
+}
+
+.check-box input {
+    height: 20px;
+    width: 20px;
+}
+
+.agree {
+    height: auto;
+    width: auto;
+    float: left;
+    margin-top: 1px;
+}
+
+.agree p {
+    color: #fff;
+}
+
+.agree p span a {
+    color: #f0b53a;
+    font-weight: bold;
+}
+
+.upline {
+    height: auto;
+    width: auto;
+    float: right;
+    /* color: #000000; */
+    margin-top: 2px;
+}
+
+.upline p {
+    color: #fff;
+    font-weight: 600;
+}
+
+.submit {
+    width: 195px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.submitn {
+    width: 165px;
+    float: right;
+    overflow: hidden;
+}
+
+.submitn input {
+    background: #f0b53a;
+    color: #1b334d;
+}
+
+.submitn input:hover {
+    color: #fff;
+}
+
+.submit input {
+    background: #f0b53a;
+    color: #1b334d;
+}
+
+.submit input:hover {
+    color: #fff;
+}
+
+.forgot_sub {
+    width: 100%;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.forgot_password {
+    width: auto;
+    float: left;
+}
+
+.forgot_password a {
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+    line-height: 45px;
+}
+
+.contact_head {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contact_head p {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1c3958;
+}
+
+#otherbg {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    min-width: 1170px;
+}
+
+#sub_otherbg {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+.contactbg {
+    width: 515px;
+    background-image: url(https://coinbitinvestment.com/images/contactbg.png);
+    background-repeat: no-repeat;
+    height: 290px;
+    float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.loc-text- {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.loc-icon- {
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+.loc-icon- i {
+    color: #f5ad11;
+    font-size: 25px;
+    padding-left: 3px;
+}
+
+.locationadd {
+    height: auto;
+    width: auto;
+    margin-left: 5px;
+    text-align: justify;
+    line-height: 24px;
+    float: left;
+}
+
+.locationadd p {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.phonef- {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+.phonef- i {
+    color: #f6af16;
+}
+
+.phonef- a {
+    color: #fff;
+}
+
+.contact_right {
+    width: 521px;
+    float: right;
+    overflow: hidden;
+}
+
+.text-area {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 152px;
+}
+
+.text-area textarea {
+    background: #f6f8fa;
+    border: 1px solid#d5d7d9;
+    border-radius: 2px;
+    width: 95.3%;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.text-area textarea::-webkit-input-placeholder {
+    color: #b8b3b3;
+}
+
+.sendnow {
+    width: 150px;
+    float: right;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.text-area textarea::-webkit-input-placeholder {
+    color: #000;
+}
+
+.deshboard-left {
+    height: auto;
+    width: 260px;
+    float: left;
+    background-color: #1b334d;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.desh-menu {
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+.desh-menu ul {
+    list-style: none;
+}
+
+.desh-menu ul li {
+    margin-top: 0px;
+    background-color: #203e5b;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.desh-menu ul li:first-child {
+    margin-top: 0px;
+}
+
+.desh-menu ul li a {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.desh-menu ul li:hover {
+    background-color: #f0b53a;
+}
+
+.desh-menu ul li a:hover {
+    color: #fff !important;
+}
+
+.desh-menu ul li a i {
+    font-size: 20px;
+    padding: 15px 0px;
+    width: 53px;
+    color: #ff9900;
+    text-align: center;
+}
+
+.desh-menu ul li a i {
+    color: #fff;
+}
+
+.desh-menu ul li:hover a i {
+    color: #1b334d;
+}
+
+.desh_right {
+    width: 810px;
+    float: right;
+    overflow: hidden;
+}
+
+.desh-user {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: #FFFFFF; */
+}
+
+.duser {
+    height: 120px;
+    width: auto;
+    float: left;
+    padding-left: 15px;
+    padding-right: 35px;
+}
+
+.user-details {
+    height: auto;
+    width: 370px;
+    float: left;
+    overflow: hidden;
+}
+
+.detais-one {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.detais-one:first-child {
+    margin-top: 0px;
+}
+
+.detais-one p {
+    color: #545454;
+    font-size: 14px;
+}
+
+.detais-one p span {
+    float: right;
+}
+
+.dw {
+    height: auto;
+    width: 170px;
+    float: right;
+    margin-right: 2px;
+}
+
+.dw a {
+    border-radius: 2px;
+    padding: 10px 0px;
+}
+
+.md {
+    height: auto;
+    width: 100%;
+}
+
+.mw {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.mw a {
+    background-color: #f0b53a;
+    color: #1b334d;
+    border-radius: 2px;
+    padding: 10px 0px;
+}
+
+.mw a:hover {
+    color: #fff;
+}
+
+.duserbg {
+    height: 150px;
+    width: 99.8%;
+    /* background-image: url(https://coinbitinvestment.com/images/deshbg.png); */
+    /* background-repeat: no-repeat; */
+    background: #f6f7f8;
+    border: 1px solid#f0b53a;
+}
+
+.duserbg_ {
+    height: 150px;
+    width: 100%;
+    background-image: url(https://coinbitinvestment.com/images/withdrawbg.png);
+    background-repeat: no-repeat;
+}
+
+.duser_one {
+    height: auto;
+    width: 50%;
+    float: left;
+    border-right: 1px solid#f0b53a;
+}
+
+.duser_two {
+    height: auto;
+    width: 49%;
+    float: left;
+}
+
+.duser_two p {
+    color: #545454;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 30px 0px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.duser_one p {
+    color: #545454;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 28px 0px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.fin_all {
+    width: 95.2%;
+    height: auto;
+    overflow: hidden;
+    background: #1b334d;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.fin_left {
+    height: auto;
+    width: 369px;
+    float: left;
+    margin-left: 33px;
+}
+
+.fin_left:first-child {
+    margin-left: 0px;
+}
+
+.fin_one {
+    width: 94.5%;
+    overflow: hidden;
+    /* padding-bottom: 5px; */
+    border-bottom: 1px solid#dddddd;
+    margin-top: 2px;
+    background: #fff;
+    padding: 10px 10px;
+    border-radius: 1px;
+}
+
+.fin_one:first-child {
+    margin-top: 0px;
+}
+
+.fin_one p {
+    color: #626262;
+    letter-spacing: 1px;
+}
+
+.fin_one p span {
+    float: right;
+}
+
+.finchead {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 24px;
+    color: #f0b53a;
+}
+
+.finbox {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.refer_tittle {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.refer_tittle p {
+    color: #1b334d;
+}
+
+.main-refer- {
+    height: 50px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.refer-text- {
+    height: auto;
+    width: auto;
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #000;
+}
+
+.banner {
+    height: auto;
+    width: 188px;
+    float: right;
+}
+
+.banner a {
+    background-color: #f9af28;
+    padding: 13.5px 0px;
+    color: #000;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.banner a:hover {
+    background-color: #1b334d;
+    color: #fff;
+}
+
+.plan_select {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid#cccccc;
+}
+
+.plan_select p {
+    color: #1c3958;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.planall {
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.planoned {
+    width: 237px;
+    background-image: url(https://coinbitinvestment.com/images/pland.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 326px;
+    margin-left: 47px;
+    float: left;
+}
+
+.planoned:first-child {
+    margin-left: 0px;
+}
+
+.plan_amounta {
+    width: auto;
+    margin: 0 auto;
+    display: table;
+    margin-top: 101px;
+}
+
+.plan_percenta {
+    width: auto;
+    float: left;
+    overflow: hidden;
+}
+
+.plan_percenta p {
+    font-size: 31px;
+    color: #f0b53a;
+    font-weight: 600;
+}
+
+.daily_fora {
+    width: auto;
+    float: left;
+    margin-left: 10px;
+}
+
+.daily_fora p {
+    font-size: 16px;
+    color: #545454;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.daysa {
+    width: auto;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+.daysa p {
+    font-size: 14px;
+    color: #545454;
+    text-transform: capitalize;
+}
+
+.plan_bordera {
+    width: auto;
+    margin: 0 auto;
+    display: table;
+    margin-top: 3px;
+}
+
+.mintexta {
+    width: 173px;
+    margin: 0 auto;
+    display: table;
+    overflow: hidden;
+}
+
+.min_onea {
+    width: auto;
+    margin-top: 14px;
+}
+
+.min_onea:first-child {
+    margin-top: 3px;
+}
+
+.min_onea p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #545454;
+}
+
+.min_onea p span {
+    float: right;
+}
+
+.checintext {
+    height: auto;
+    width: auto;
+    /* margin: 0 auto; */
+    text-align: center;
+    /* display: table; */
+    padding: 7px 26px;
+    /* margin-top: -62px; */
+    position: relative;
+    background: #10456b;
+    margin: 0 auto;
+    display: table;
+    border-radius: 4px;
+    margin-top: 13px;
+}
+
+.check_tittle {
+    width: auto;
+    float: left;
+    margin-left: 15px;
+    margin-top: 1px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.check_tittle p {
+    color: #ffffff;
+}
+
+.check-in {
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+.check-in input[type="radio"]:after {
+    width: 19px;
+    height: 19px;
+    position: relative;
+    background-color: #ffffff;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border-radius: 4px;
+    top: -2px;
+    left: 0px;
+}
+
+.check-in input[type="radio"]:checked:after {
+    width: 19px;
+    height: 19px;
+    top: -4px;
+    left: 0px;
+    position: relative;
+    content: "\2713";
+    display: inline-block;
+    visibility: visible;
+    margin-top: 2px;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 22px;
+    background-color: #ffa726;
+}
+
+.balance_tittle_ {
+    width: 99.6%;
+    background-color: #1b334c;
+    margin-top: 37px;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 15px 0px;
+}
+
+.balance_tittle_ p {
+    color: #f0b53a;
+    font-size: 19px;
+    padding-left: 20px;
+    font-weight: 500;
+    padding-right: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.balance_tittle_ p span {
+    color: #f0b53a;
+    float: right;
+    font-size: 19px;
+}
+
+.deposit_amount_ {
+    width: 100%;
+    overflow: hidden;
+    height: 54px;
+    margin-top: 25px;
+    border-radius: 4px;
+}
+
+.deposit_amount_:first-child {
+    margin-top: 0px;
+}
+
+.deposit_tittle_ {
+    float: left;
+    width: 190px;
+    padding: 7px 0px;
+    color: #545454;
+    line-height: 32px;
+}
+
+.deposit_tittle_ p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.deposit_box_d_ {
+    width: 614px;
+    float: left;
+    border: 1px solid#f0b53a;
+    background-color: #fffffe;
+    border-radius: 4px;
+    padding: 11px 0px;
+    border-radius: 5px;
+    /* border-radius: 0px; */
+    /* border: 1px solid#ccdeeb; */
+    float: left;
+    /* border-radius: 4px; */
+    padding: 7px 0px;
+}
+
+.deposit_box_type_d {
+    height: auto;
+    width: 385px;
+    margin-left: 20px;
+    float: left;
+}
+
+.deposit_box_type_d input {
+    border: none;
+    letter-spacing: 1px;
+    padding: 6px 0px;
+    border-radius: 4px;
+}
+
+.depost_dolar_ {
+    width: auto;
+    float: right;
+    margin-right: 20px;
+}
+
+.depost_dolar_ p {
+    font-size: 16px;
+    color: #000;
+    line-height: 29px;
+}
+
+.select_pay {
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid#d1d6db;
+    display: table;
+    color: #1b334d;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.spend {
+    height: auto;
+    width: 62%;
+    overflow: hidden;
+    margin-top: 16px;
+    padding-top: 2px;
+}
+
+.spend:first-child {
+    margin-top: 0px;
+}
+
+.spen_left {
+    float: left;
+    width: auto;
+    margin-left: 19px;
+    color: #545454;
+    margin-top: -3px;
+}
+
+.check_payment {
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+.check_payment input[type="radio"]:after {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    /* background-color: #00bfff; */
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    background-color: #757575;
+    border-radius: 20%;
+    top: -2px;
+    left: 0px;
+}
+
+.check_payment input[type="radio"]:checked:after {
+    width: 15px;
+    height: 15px;
+    top: -4px;
+    left: 0px;
+    position: relative;
+    content: "\2713";
+    display: inline-block;
+    visibility: visible;
+    margin-top: 2px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 16px;
+    background-color: #10456b;
+}
+
+.spend_now {
+    width: 125px;
+    float: left;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.withdraw_box {
+    width: 95%;
+    height: auto;
+    background-color: #1b334d;
+    padding: 20px;
+    margin-top: 31px;
+    overflow: hidden;
+}
+
+.processing-head {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    color: #f0b53a;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: capitalize;
+    /* background-color: #00968f; */
+    /* margin-top: 30px */
+}
+
+.propartone {
+    width: 180px;
+    float: left;
+    margin-left: 7px;
+}
+
+.propartone p {}
+
+.proparttwo {
+    width: 130px;
+    float: left;
+}
+
+.proparttwo p {}
+
+.propartthree {
+    width: 100px;
+    float: left;
+}
+
+.propartthree p {}
+
+.propartfour {
+    width: auto;
+    margin-right: 25px;
+    float: right;
+}
+
+.propartfour p {}
+
+.processing_down {
+    width: 100%;
+    margin-top: 13px;
+    /* background-color: #fff; */
+    overflow: hidden;
+    /* padding: 10px; */
+}
+
+.pro_one {
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 7px 0px;
+}
+
+.pro_one:first-child {
+    margin-top: 0px;
+}
+
+.pay_one {
+    width: 180px;
+    float: left;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+.paycheckbox {
+    height: auto;
+    width: auto;
+    margin-top: 2px;
+    float: left;
+    margin-top: 2px;
+}
+
+.paycheckbox input[type="radio"]:after {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    background-color: #fff;
+    border: 2px solid#545454;
+    border-radius: 50%;
+    top: -3px;
+    left: 0px;
+}
+
+.paycheckbox input[type="radio"]:checked:after {
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    left: 0px;
+    position: relative;
+    content: "\2022";
+    display: inline-block;
+    visibility: visible;
+    margin-top: 2px;
+    color: #f0b53a;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid#f0b53a;
+    font-weight: 600;
+    line-height: 16.5px;
+}
+
+.pay_icon {
+    width: auto;
+    margin-left: 20px;
+    float: left;
+}
+
+.available {
+    width: 130px;
+    margin-top: 9px;
+    float: left;
+}
+
+.available p {
+    color: #545454;
+}
+
+.pending {
+    width: 100px;
+    float: left;
+    margin-top: 9px;
+}
+
+.pending p {
+    color: #545454;
+}
+
+.acouuntn {
+    height: auto;
+    width: auto;
+    margin-top: 9px;
+    float: right;
+    margin-right: 20px;
+}
+
+.acouuntn p {
+    color: #545454;
+}
+
+.withdraw_down_ {
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.comment {
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.comment textarea {
+    height: 75%;
+    width: 97%;
+    border: 1px solid#f0b53a;
+}
+
+.invest_now_ {
+    height: auto;
+    width: 140px;
+    margin-top: 15px;
+}
+
+.aboutup {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.about_lefti {
+    width: auto;
+    float: left;
+}
+
+.about_rightp {
+    width: 100%;
+    float: right;
+    overflow: hidden;
+}
+
+.abouthead {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.abouthead p {
+    font-size: 22px;
+    color: #f0b53a;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.abouthead p span {
+    color: #1c3958;
+}
+
+.more_about {
+    width: 181px;
+    height: auto;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.aboutdowna {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.fe_left {
+    width: 620px;
+    float: left;
+    overflow: hidden;
+}
+
+.features {
+    width: 100%;
+    margin-top: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    background: #0000000f;
+    padding: 10px;
+}
+
+.features p i {
+    color: #f0b53a;
+}
+
+.certr {
+    width: auto;
+    float: right;
+}
+
+.news_box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.news_hd {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.news_hd p {
+    color: #1b334d;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.news_hd p span {
+    color: #f0b53a;
+}
+
+.one_news {
+    height: auto;
+    width: 96.3%;
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px dashed #a3abb4;
+    margin-top: 10px;
+}
+
+.newsi {
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+.news_right {
+    width: 918px;
+    float: right;
+    overflow: hidden;
+}
+
+.news_headera {
+    width: 100%;
+    overflow: hidden;
+}
+
+.news_headera p {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #1b334d;
+    font-weight: 400;
+}
+
+.news_headera p span {
+    color: #ab7000;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.news_text_ {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.news_text_ p {
+    line-height: 30px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.5px;
+}
+
+.regars {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.regars p {
+    color: #f0b53a;
+}
+
+.regars p span {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.all_faq {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.faq_left {
+    width: 555px;
+    float: left;
+    overflow: hidden;
+}
+
+.faq_one {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.faq_one:first-child {
+    margin-top: 0px;
+}
+
+.faq_head {
+    width: 100%;
+    overflow: hidden;
+}
+
+.faq_head p {
+    font-size: 24px;
+    color: #1b334d;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.faq_all {
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.faq_right {
+    width: 555px;
+    float: right;
+    overflow: hidden;
+}
+
+.error {
+    width: auto;
+    color: #fff;
+    background-color: #960808;
+    padding: 13px 30px;
+    overflow: hidden;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    border-radius: 40px;
+    font-size: 13px;
+}
+
+.success {
+    width: auto;
+    color: #fff;
+    background-color: green;
+    padding: 13px 30px;
+    overflow: hidden;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    border-radius: 40px;
+    font-size: 13px;
+}
+
+table {
+    width: 100%;
+}
+
+table tr td {
+    padding: 15px;
+    border-right: solid 1px #c7c7c745;
+    border-bottom: solid 1px #c7c7c745;
+    background: #f1f1f1;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 14px;
+}
+
+table tr:nth-child(odd) td {
+    background: #cccccc36;
+    color: #000;
+}
+
+table tr td:first-child {
+    border-left: solid 1px #e5e5e545;
+}
+
+table tr:first-child td {
+    border-top: solid 1px #e5e5e545;
+}
+
+table tr:first-child td:first-child {
+    border-top-left-radius: 3px;
+}
+
+table tr:first-child td:last-child {
+    border-top-right-radius: 3px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+table tr td.inheader {
+    color: #000;
+    border: none;
+    background: #f6ad11;
+}
+
+table tr td.inheader_2 {
+    color: #000;
+    border: none;
+    background: #f6ad11;
+}
+
+table tr td img {
+    width: auto;
+}
+
+table tr th {
+    padding: 15px;
+    border-right: solid 1px #c7c7c745;
+    border-bottom: solid 1px #c7c7c745;
+    background: #f1f1f1;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+table tr:nth-child(odd) th {
+    background: #cccccc36;
+    color: #000;
+}
+
+table tr th:first-child {
+    border-left: solid 1px #e5e5e545;
+}
+
+table tr:first-child th {
+    border-top: solid 1px #e5e5e545;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 3px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 3px;
+}
+
+table tr:last-child th:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+table tr:last-child th:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+table tr th.inheader {
+    color: #000;
+    border: none;
+    background: #d6b400de;
+}
+
+table tr th.inheader_2 {
+    color: #fff;
+    border: none;
+    background: #424242;
+}
+
+table tr th img {
+    width: auto;
+}
+
+.banner-head {
+    text-align: center;
+    color: #000;
+}
+
+.deposit-process-wrap {
+    width: 30%;
+    float: left;
+}
+
+.deposit-cancel-wrap {
+    width: 30%;
+    float: left;
+    margin-left: 15px;
+}
+
+#placeforstatus {
+    color: #ca8d00 !important;
+    width: 100%;
+    height: auto;
+    text-align: center !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    background-size: 128px 128px;
+}
+
+#placeforstatus:img {
+    opacity: 0.1;
+}
+
+.btc_form {
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btc_form a {
+    color: #000;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-style: normal;
+    pointer-events: none;
+    cursor: default;
+}
+
+.deposit_withdraw {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 37px;
+    margin-bottom: 49px;
+}
+
+.invest_left {
+    width: 545px;
+    float: left;
+    height: auto;
+}
+
+.invest_right {
+    width: 545px;
+    float: right;
+    height: auto;
+    margin-right: 7px;
+}
+
+.invest-all {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    float: left;
+}
+
+.first {
+    height: auto;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    padding-bottom: 9px;
+    font-size: 15px;
+    margin-top: 17px;
+    border-bottom: 1px solid#d9d9d9;
+}
+
+.first:first-child {
+    margin-top: 0px;
+}
+
+.payby {
+    height: auto;
+    width: auto;
+    float: right;
+    margin-top: 3px;
+}
+
+.amount {
+    height: auto;
+    width: 110px;
+    color: #454545;
+    float: left;
+    margin-top: 7px;
+}
+
+.investor {
+    height: auto;
+    width: 220px;
+    float: left;
+    color: #454545;
+    text-transform: capitalize;
+    margin-top: 7px;
+}
+
+.investor p i {
+    color: #000;
+    margin-right: 5px;
+}
+
+.headline_text {
+    margin-bottom: 18px;
+}
+
+.headline_text p {
+    text-align: center;
+    background: #f0b53a;
+    padding: 11px 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 19px;
+    border-radius: 40px;
+    color: #000;
+}

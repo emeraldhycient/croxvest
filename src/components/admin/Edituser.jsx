@@ -45,7 +45,7 @@ function Edituser({ userid }) {
 
     axios({
       method: "POST",
-      url: "http://api.croxvest.com/api/admin/updateuser.php",
+      url: "https://api.croxvest.com/api/admin/updateuser.php",
       data: formdata,
     })
       .then((res) => {
@@ -56,7 +56,10 @@ function Edituser({ userid }) {
           }, 1000);
         }
       })
-      .catch((err) => notify(err.response.data.message))
+      .catch((err) => {
+        console.log(err.response);
+        notify(err.response.data.message);
+      })
       .finally((e) => {
         setTimeout(() => {
           toggleloading();
@@ -80,7 +83,7 @@ function Edituser({ userid }) {
   useEffect(() => {
     axios
       .get(
-        `http://api.croxvest.com/api/admin/userdetails.php?userid=${userid}`
+        `https://api.croxvest.com/api/admin/userdetails.php?userid=${userid}`
       )
       .then((res) => {
         //console.log(res);

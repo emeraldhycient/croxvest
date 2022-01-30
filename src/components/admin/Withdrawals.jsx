@@ -52,7 +52,7 @@ function Withdrawal() {
     formdata.append("status", "processed");
     axios({
       method: "POST",
-      url: "http://api.croxvest.com/api/admin/withdrawal.php",
+      url: "https://api.croxvest.com/api/admin/withdrawal.php",
       data: formdata,
     })
       .then((res) => {
@@ -65,7 +65,7 @@ function Withdrawal() {
 
   useEffect(() => {
     axios
-      .get("http://api.croxvest.com/api/admin/withdrawal.php?all=all")
+      .get("https://api.croxvest.com/api/admin/withdrawal.php?all=all")
       .then((res) => {
         let mod = Object.values(res.data.data.withdrawal);
         setwithdrawals(mod);
@@ -74,7 +74,7 @@ function Withdrawal() {
 
     axios
       .get(
-        "http://api.croxvest.com/api/admin/withdrawal.php?unprocessed=all"
+        "https://api.croxvest.com/api/admin/withdrawal.php?unprocessed=all"
       )
       .then((res) => {
         let mod = Object.values(res.data.data.withdrawal);

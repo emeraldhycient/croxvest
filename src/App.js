@@ -36,6 +36,7 @@ import Referrals from './components/admin/Referrals'
 import Messages from './components/admin/Messages'
 import Emails from './components/admin/Emails'
 import Admin_settings from './components/admin/Admin_settings'
+import Clone2 from './components/clone2/Clone2';
 /* admin dashboard */
 
 
@@ -44,7 +45,7 @@ function App() {
   return (
     <Router>
       <Switch>
-      <Route path="/" exact component={Index2} />
+      <Route path="/" exact component={Clone2} />
       <Route path="/index2" exact component={Index} />
         <Route path="/about" component={About} />
         <Route path="/faq" component={Faq} />

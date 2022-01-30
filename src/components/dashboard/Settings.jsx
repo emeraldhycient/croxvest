@@ -67,7 +67,7 @@ function Settings() {
 
     axios({
       method: "POST",
-      url: "http://api.croxvest.com/api/auth/updatesettings.php",
+      url: "https://api.croxvest.com/api/auth/updatesettings.php",
       data: formdata,
     })
       .then((e) => {
@@ -89,7 +89,7 @@ function Settings() {
     formdata.append("userid", user);
     axios({
       method: "POST",
-      url: "http://api.croxvest.com/api/user/userdetails.php",
+      url: "https://api.croxvest.com/api/user/userdetails.php",
       data: formdata,
     })
       .then((res) => {

@@ -47,7 +47,7 @@ function Contact() {
 
     axios({
       method: "POST",
-      url: " http://api.croxvest.com/api/user/message.php",
+      url: " https://api.croxvest.com/api/user/message.php",
       data: formdata,
     })
       .then((res) => {
@@ -156,7 +156,7 @@ function Contact() {
               <div className="bg-dark p-2">
                 <h6 className="text-light mb-2">
                   <i className="fa fa-phone bg-light text-success rounded p-2 mr-2"></i>
-                  +1(209) 500-0916 ,+62-087886768004
+                  +1-0000000000 ,+62-000000000
                 </h6>
                 <h6>
                   <i className="fa fa-envelope text-danger bg-light rounded p-2 mr-2"></i>

@@ -30,7 +30,7 @@ function Admin_index() {
 
   const gettotalusers = () => {
     axios
-      .get("http://api.croxvest.com/api/admin/totalusers.php")
+      .get("https://api.croxvest.com/api/admin/totalusers.php")
       .then((res) => {
         //console.log(res);
         settotaluser(res.data.data.users);
@@ -40,7 +40,7 @@ function Admin_index() {
 
   const getdeposit = () => {
     axios
-      .get("http://api.croxvest.com/api/admin/totaldeposits.php")
+      .get("https://api.croxvest.com/api/admin/totaldeposits.php")
       .then((res) => {
         //console.log(res);
         settotaldeposit(res.data.data.amount);

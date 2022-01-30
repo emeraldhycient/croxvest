@@ -39,7 +39,7 @@ function Home() {
     formdata.append("userid", user);
     axios({
       method: "POST",
-      url: "http://api.croxvest.com/api/user/userdetails.php",
+      url: "https://api.croxvest.com/api/user/userdetails.php",
       data: formdata,
     })
       .then((res) => {
@@ -53,7 +53,7 @@ function Home() {
     formdata.append("userid", user);
     axios({
       method: "POST",
-      url: "http://api.croxvest.com/api/user/totaldeposit.php",
+      url: "https://api.croxvest.com/api/user/totaldeposit.php",
       data: formdata,
     })
       .then((res) => {
@@ -66,6 +66,7 @@ function Home() {
     fetchdetails();
     getdeposit();
   }, []);
+
 
   return (
     <>
@@ -117,8 +118,9 @@ function Home() {
                   </h6>
                   <h6 className="text-dark my-3 ml-2">
                     referral link
-                    <input type="text" className="form-control" defaultValue={`http://api.croxvest.com/signup/${user}`} id="" />
-                   
+                      <div className="card">
+                      https://api.croxvest.com/signup/{userdetails.email}
+                        </div>                   
                   </h6>
                   <div className="btn-group w-100 pl-2 pr-2">
                     <button className="btn btn-primary col">

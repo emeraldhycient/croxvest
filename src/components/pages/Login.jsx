@@ -39,7 +39,7 @@ function Login() {
 
     axios({
       method: "POST",
-      url: "http://api.croxvest.com/api/auth/login.php",
+      url: "https://api.croxvest.com/api/auth/login.php",
       data: formdata,
     })
       .then((res) => {
@@ -65,6 +65,7 @@ function Login() {
         }
       })
       .catch((err) => {
+        console.log(err);
         notify(err.response.data.message);
       })
       .finally((e) => {

@@ -53,7 +53,7 @@ function Signup() {
 
     axios({
       method: "POST",
-      url: "http://api.croxvest.com/api/user/createaccount.php",
+      url: "https://api.croxvest.com/api/user/createaccount.php",
       data: formdata,
     })
       .then((res) => {
@@ -103,7 +103,7 @@ function Signup() {
 
   useEffect(() => {
     axios
-      .get("http://api.croxvest.com/api/admin/packages.php?all=all")
+      .get("https://api.croxvest.com/api/admin/packages.php?all=all")
       .then((res) => {
         //console.log(res);
         let mod = Object.values(res.data.data);
@@ -244,7 +244,7 @@ function Signup() {
                 <option>Select Your Currency</option>
                 <option value="usd">&#36; Eth</option>
                 <option value="euro ">&euro; Lte</option>
-                <option value="pound">&#163; Ud</option>
+                <option value="pound">&#163; Usd</option>
                 <option value="bitcoin ">&#8383; Bitcoin</option>
               </select>
               {isloading ? (
